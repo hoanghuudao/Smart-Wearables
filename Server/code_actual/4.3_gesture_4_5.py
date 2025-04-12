@@ -21,7 +21,7 @@ def plot_confusion(y_true, y_pred, labels, title):
     plt.figure(figsize=(6, 5))
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=labels, yticklabels=labels)
     plt.xlabel('Predicted')
-    plt.ylabel('Actual')
+    plt.ylabel('True')
     plt.title(f'Confusion Matrix - {title}')
     plt.tight_layout()
     plt.show()
